@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>HOME Simple Deacommerce</title>
+  </head>
+  <body>
+    <div class="chat fa fa-brands fa-square-whatsapp" onclick="chat()"></div>
+    <header>
+      <ul class="nav-list animate__animated animate__backInDown">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa fa-home"></span>
+            <span class="nav-text">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa fa-cart-plus"></span>
+            <span class="nav-text">PRODUCT</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="category.html" class="nav-link">
+            <span class="nav-icon fa fa-list"></span>
+            <span class="nav-text">CATEGORY</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <span class="nav-icon fa fa-contact-card"></span>
+            <span class="nav-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2 class="title">Product List</h2>
+        <div class="row">
+          <div class="col" onclick="buy('baju lebaran', 100000)">
+            <img src="images/product-1.jpg" />
+            <h4>Baju Lebaran</h4>
+            <p>Rp. 100.000</p>
+          </div>
+          <div class="col" onclick="buy('sepatu jumatan', 110000)">
+            <img src="images/product-2.jpg" />
+            <h4>Sepatu Jumatan</h4>
+            <p>Rp. 110.000</p>
+          </div>
+          <div class="col" onclick="buy('celana tahun baru', 120000)">
+            <img src="images/product-3.jpg" />
+            <h4>Celana Tahun Baru</h4>
+            <p>Rp. 120.000</p>
+          </div>
+          <div class="col" onclick="buy('baju anak', 130000)">
+            <img src="images/product-4.jpg" />
+            <h4>Baju Anak</h4>
+            <p>Rp. 130.000</p>
+          </div>
+          <div class="col" onclick="buy('baju bapak', 140000)">
+            <img src="images/product-5.jpg" />
+            <h4>Baju Bapak</h4>
+            <p>Rp. 140.000</p>
+          </div>
+          <div class="col" onclick="buy('baju ibu', 150000)">
+            <img src="images/product-6.jpg" />
+            <h4>Baju Ibu</h4>
+            <p>Rp. 150.000</p>
+          </div>
+          <div class="col" onclick="buy('baju teteh', 160000)">
+            <img src="images/product-7.jpg" />
+            <h4>Baju Teteh</h4>
+            <p>Rp. 160.000</p>
+          </div>
+          <div class="col" onclick="buy('baju om', 170000)">
+            <img src="images/product-8.jpg" />
+            <h4>Baju Om</h4>
+            <p>Rp. 170.000</p>
+          </div>
+          <div class="col" onclick="buy('Baju Paman', 180000)">
+            <img src="images/product-9.jpg" />
+            <h4>Baju Paman</h4>
+            <p>Rp. 180.000</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright <span id="year"></span>. CUYSHOP</p>
+    </footer>
+
+    <script src="source.js"></script>
+  </body>
+</html>
