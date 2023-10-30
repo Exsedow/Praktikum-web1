@@ -3,27 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form dan input</title>
+    <title>Belajar DOM</title>
 </head>
 <body>
-    <form action="">
-        <label for="nik">NIK :</label><br>
-        <input type="text"  id="nik" name="nik" size="10" maxlength="10" required ="misal : 123"><br>
-        <label for="nama">Nama :</label> <br>
-        <input type="text" id="nama" name="nama" required placeholder="misal: fulan"><br>
-        <label for="tanggal_mulai">Tanggal Mulai :</label><br>
-        <input type="date"  id="tanggal_mulai" name="tanggal_mulai" required min="2022-01-11"><br>
-        <label for="gaji_pokok">gaji_pokok</label><br>
-        <input type="number" name="gaji_pokok" id="gaji_pokok" required min="1000000" step="1000"><br>
-        <label for="status_karyawan">Status Karyawan</label><br>
-        <input type="radio" name="kontrak" id="status_karyawan" value="TETAP">
-        <label for="tetap">TETAP</label><br>
-        <input type="radio" name="kontrak" id="status_karyawan" value="KONTRAK">
-        <label for="kontrak">KONTRAK</label><br>
-        <input type="radio" name="magang" id="status_karyawan" value="MAGANG">
-        <label for="magang">MAGANG</label><br>
-        <input type="submit" name="btn_submit" id="btn_submit" value="Submit">
-        <input type="reset" name="btn_reset" id="btn_reset" value="Reset">
-    </form>
+    <h1 id="uji_heading"></h1>
+    <p id="uji_paragraf"></p>
+    <input type="text" id="uji_input">
+
+    <script>
+        document.getElementById('uji_heading').innerHTML = "Judul"
+        document.getElementById('uji_paragraf').innerHTML = "Paragraf"
+        document.getElementById('uji_input').innerHTML = "Input"
+    </script>
 </body>
 </html>
