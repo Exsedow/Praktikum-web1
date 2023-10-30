@@ -6,14 +6,57 @@
     <title>Belajar DOM</title>
 </head>
 <body>
-    <h1 id="uji_heading"></h1>
-    <p id="uji_paragraf"></p>
-    <input type="text" id="uji_input">
+    <h1 id="uji_heading"
+    onmousedown="sorot (this)"
+    onmousedown="keluarSorot(this)">
+        sorot dong!
+    </h1>
+
+    <h2 id="uji_klik" onmousedown="tahan(this)" onmouseup="lepas(this)">
+        klik dong!
+    </h2>
+
+    <label for="uji_input">Uji coba Input</label><br>
+    <input type="text" id="uji_input" onkeyup="tiru()"><br>
+    <span id="uji_span"></span><br>
+    <button onclick="klik()">klik</button>
+    <button onclick="ulang()">ulangi</button>
 
     <script>
-        document.getElementById('uji_heading').innerHTML = "Judul"
-        document.getElementById('uji_paragraf').innerHTML = "Paragraf"
-        document.getElementById('uji_input').innerHTML = "Input"
+        function sorot(obj){
+            obj.innerHTML = "sudah disorot"
+        }
+        function keluarSorot(obj){
+            obj.innerHTML = "sorot lagi dong!"
+        }
+        function tahan(obj){
+            obj.innerHTML = "Lepasin..."
+        }
+        function lepas(obj){
+            obj.innerHTML = "klik lagi dong!"
+        }
+        function klik(obj){
+            valueInput = document.getElementById('uji_input').value;
+            span = document.getElementById('uji_span');
+
+            if (valueInput == "") {
+                span.innerHTML = "inputan kosong";
+                span.style = "color:red";
+            }else {
+                span.innerHTML = "input : '"+valueInput+"'";
+                span.style = "color:blue";
+            }
+        }
+        function tiru(){
+            valueInput = document.getElementById('uji_input').value;
+            document.getElementById('uji_span').innerHTML = valueInput
+        }
+        function ulangi(){
+            document.getElementById('uji_input').value = "";
+            document.getElementById('uji_span').value = "";
+            document.getElementById('uji_heading').value = "sorot dong!";
+            document.getElementById('uji_klik').value = "klik dong!";
+        }
     </script>
 </body>
 </html>
